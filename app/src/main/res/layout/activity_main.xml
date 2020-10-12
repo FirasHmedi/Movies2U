@@ -10,7 +10,7 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginStart="0dp"
         android:layout_marginEnd="0dp"
         android:background="?android:attr/windowBackground"
@@ -22,8 +22,8 @@
     <fragment
         android:id="@+id/nav_host_fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="416dp"
-        android:layout_height="675dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:defaultNavHost="true"
         app:layout_constraintBottom_toTopOf="@id/nav_view"
         app:layout_constraintHorizontal_bias="0.0"

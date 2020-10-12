@@ -14,7 +14,13 @@ interface TheMovieDBInterface {
     // https://api.themoviedb.org/3/
 
     @GET("movie/popular")
-    fun getPopularMovie(@Query("page") page: Int): Single<MovieResponse>
+    fun getPopularMovies(/*@Query("page") page: Int*/): Single<MovieResponse>
+
+    @GET("movie/top_rated")
+    fun getTopRatedMovies(/*@Query("page") page: Int*/): Single<MovieResponse>
+
+    @GET("movie/now_playing")
+    fun getLatestMovies(/*@Query("page") page: Int*/): Single<MovieResponse>
 
     @GET("movie/{movie_id}")
     fun getMovieDetails(@Path("movie_id") id: Int): Single<MovieDetails>
